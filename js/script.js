@@ -29,17 +29,19 @@ new Vue({
     methods: {
         mostrarCreditos() {
             Swal.fire({
-                title: "Acerca de",
-                html: `Creado por <a href="//parzibyte.me/blog">Idiomas</a>
+                title: "Equipo",
+                html: `Integrantes 
                 <br>
-                <strong>Créditos</strong>
+                <strong>Ingles</strong>
                 <br>
                 Imagen de signo de interrogación: 
-                <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> 
-                    from <a rel="nofollow" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> 
-                    is licensed by 
-                    <a rel="nofollow" href="http://creativecommons.org/licenses/by/3.0/" 
-                    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                <div>
+                <h4>Mónica Andrea Nava Hernández </h4>
+                <h4>Ania Estefani García León </h4>
+                <h4>Rosa Irene Martínez Osorio</h4>
+                <h4>3</h4>
+                <h4>Oscar Hernández Bautista</h4>
+
                 </div>
                 `,
                 confirmButtonText: "Cerrar",
