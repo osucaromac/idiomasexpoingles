@@ -37,7 +37,7 @@ new Vue({
                 <div>
                 <h4>Profesor: Hector</h4> 
                 <h4>Mónica Andrea Nava Hernández </h4>
-                <h4>Ania Estefani García León </h4>
+                <h4>Tania Estefani García León </h4>
                 <h4>Rosa Irene Martínez Osorio</h4>
                 <h4>Edna Abigail Gómez Antolin</h4>
                 <h4>Oscar Hernández Bautista</h4>
