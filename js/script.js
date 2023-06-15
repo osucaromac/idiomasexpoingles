@@ -7,12 +7,20 @@ new Vue({
     data: () => ({
         // La ruta de las imágenes. Puede ser relativa o absoluta
         imagenes: [
-            "./img/cabra.jpg",
-            "./img/conejo.jpg",
-            "./img/leon.jpg",
-            "./img/oveja.jpg",
-            "./img/perro.jpg",
-            "./img/gato.jpg",
+            "./img/architect.jpg",
+            "./img/dntist.jpg",
+            "./img/hairdresser.jpg",
+            "./img/journalist.jpg",
+            "./img/nurse.jpg",
+            "./img/taxiDriver.jpg",
+        ],
+        sounds: [
+            "./sound/Acounted.mp4",
+            "./sound/Dentist.mp4",
+            "./sound/Herdesert.mp4",
+            "./sound/Journalist.mp4",
+            "./sound/Nourse.mp4",
+            "./sound/Taxidriver.mp4",
         ],
         memorama: [],
         // Útiles para saber cuál fue la carta anteriormente seleccionada
@@ -29,10 +37,10 @@ new Vue({
     methods: {
         mostrarCreditos() {
             Swal.fire({
-                title: "Equipo",
+                title: "Team 4",
                 html: `Integrantes 
                 <br>
-                <strong>Ingles</strong>
+                <strong>English</strong>
                 <br>
                 <div>
                 <h4>Profesor: Hector</h4> 
@@ -53,27 +61,27 @@ new Vue({
         // de mostrarla, se reinicia el juego
         indicarFracaso() {
             Swal.fire({
-                    title: "Perdiste",
-                    html: `
-                <img class="img-fluid" src="./img/perdiste.png" alt="Perdiste">
+                title: "Your Wrong",
+                html: `
+                <img class="img-fluid" src="./img/wrong.png" alt="Perdiste">
                 <p class="h4">Agotaste tus intentos</p>`,
-                    confirmButtonText: "Jugar de nuevo",
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                })
+                confirmButtonText: "Jugar de nuevo",
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+            })
                 .then(this.reiniciarJuego)
         },
         // Mostrar alerta de victoria y reiniciar juego
         indicarVictoria() {
             Swal.fire({
-                    title: "¡Ganaste!",
-                    html: `
-                <img class="img-fluid" src="./img/ganaste.png" alt="Ganaste">
+                title: "¡Ganaste!",
+                html: `
+                <img class="img-fluid" src="./img/champeon.png" alt="Ganaste">
                 <p class="h4">Muy bien hecho</p>`,
-                    confirmButtonText: "Jugar de nuevo",
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                })
+                confirmButtonText: "Play Again",
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+            })
                 .then(this.reiniciarJuego)
         },
         // Método que indica si el jugador ha ganado
@@ -185,13 +193,13 @@ new Vue({
         precargarImagenes() {
             // Mostrar la alerta
             Swal.fire({
-                    title: "Cargando",
-                    html: `Cargando imágenes...`,
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                })
+                title: "Cargando",
+                html: `Cargando imágenes...`,
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+            })
                 .then(this.reiniciarJuego)
-                // Ponerla en modo carga
+            // Ponerla en modo carga
             Swal.showLoading();
 
 
